@@ -10,6 +10,8 @@ let url = 'https://capstone-proj.herokuapp.com/';
 axios.defaults.baseURL = url;
 axios.defaults.headers['content-type'] = 'application/json';
 axios.defaults.headers.common['Authorization'] = localStorage.getItem('JWT_PAYLOAD');
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+
 
 ReactDOM.render(
   <React.StrictMode>
