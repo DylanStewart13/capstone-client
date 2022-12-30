@@ -6,6 +6,9 @@ import store from '../../store/index';
 import Toast from '../Toast/Toast';
 import './Auth.css';
 
+axios.defaults.headers['content-type'] = 'application/json';
+axios.defaults.headers.common['Authorization'] = localStorage.getItem('JWT_PAYLOAD');
+
 export default class Auth extends React.Component {
 
     constructor(props) {
