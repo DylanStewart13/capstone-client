@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
 
-let url = 'http://localhost:5000';
+let url = 'https://bottega-capstone-server.netlify.app';
 
 axios.defaults.baseURL = url;
 axios.defaults.headers.post['Content-Type'] = 'application/json';
