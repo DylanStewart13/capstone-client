@@ -11,7 +11,6 @@ axios.defaults.baseURL = url;
 axios.defaults.headers['content-type'] = 'application/json';
 axios.defaults.headers.common['Authorization'] = localStorage.getItem('JWT_PAYLOAD');
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
