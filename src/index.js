@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
 
-let url = 'https://capstone-proj.herokuapp.com/';
+let url = 'https://capstone-proj.herokuapp.com';
 
 axios.defaults.baseURL = url;
 axios.defaults.headers['content-type'] = 'application/json';
