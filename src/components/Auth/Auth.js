@@ -17,10 +17,17 @@ export default class Auth extends React.Component {
             tab: 'signin',
             showToast: false
         }
+        this.signUp = this.signUp.bind(this);
+        this.signIn = this.signIn.bind(this);
     }
 
     signIn = (email, password) => {
-        axios.post('/api/users/login', { email, password }).then(res => {
+        let data = {
+            email: email,
+            password: password
+        }
+
+        axios.post('/api/users/login', data).then(res => {
             if (res.data.success) {
                 store.dispatch({
                     type: 'login',
